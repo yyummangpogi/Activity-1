@@ -1,0 +1,92 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+	
+	int month, date, year;
+	
+	cout << "Enter your Birth month: (1-12)\n";
+	cin >> month; 
+	cout << "Enter your Birth date: (1-31)\n";
+	cin >> date;
+	cout << "Enter your Birth year: \n";
+	cin >> year;
+	
+	
+	if (month == 1)
+	{
+		cout <<endl<< "January " << date << ", " << year << endl;
+	}
+	
+	else if (month == 2 && date > 28) 
+	{
+		cout <<endl<< "Invalid Date!!";
+	}
+	
+	else if (month == 2)
+	{
+	 	cout <<endl<< "February " << date << ", " << year << endl;
+	}
+	
+	else if (month == 3)
+	{
+		 cout <<endl<< "March " << date << ", " << year << endl;
+	}
+	
+	else if (month == 4)
+	{
+	 	cout <<endl<<"April " << date << ", " << year << endl;
+	} 
+	
+	else if (month == 5)
+	{
+		 cout <<endl<<"May " << date << ", " << year << endl;
+	} 
+	
+	else if (month == 6)
+	{
+	 	cout <<endl<<"June " << date << ", " << year << endl;
+	} 
+	
+	else if (month == 7)
+	{
+	 	cout <<endl<<"July " << date << ", " << year << endl;
+	} 
+	
+	else if (month == 8)
+	{
+		 cout <<endl<<"August " << date << ", " << year << endl;
+	} 
+	
+	else if (month == 9)
+	{
+	 cout <<endl<<"September " << date << ", " << year << endl;
+	} 
+	
+	else if (month == 10)
+	{
+	 cout <<endl<<"October " << date << ", " << year << endl;
+	} 
+	
+	else if (month == 11)
+	{
+		 cout <<endl<<"November " << date << ", " << year << endl;
+	} 
+	
+	else if (month == 12)
+	{
+		 cout <<endl<<"December " << date << ", " << year << endl;
+	} 
+	
+	//standard
+	else 
+	{
+			cout << endl<<"INVALID!"<< endl;
+	}
+	
+	return 0;
+
+}
